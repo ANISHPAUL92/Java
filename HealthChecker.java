@@ -1,6 +1,6 @@
-package com.nokia.oss.securitymanagement.tlsconfig.validator;
+package com.tlsconfig.validator;
 
-import static com.nokia.oss.securitymanagement.tlsconfig.utils.BundleManager.getResourceString;
+import static com.tlsconfig.utils.BundleManager.getResourceString;
 
 import java.text.MessageFormat;
 import java.util.HashSet;
@@ -10,11 +10,11 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.nokia.oss.securitymanagement.tlsconfig.dto.SSHExecutionStatusDTO;
-import com.nokia.oss.securitymanagement.tlsconfig.exception.TLSException;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.Constants;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.PropReader;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.SSHAdapter;
+import com.tlsconfig.dto.SSHExecutionStatusDTO;
+import com.tlsconfig.exception.TLSException;
+import com.tlsconfig.utils.Constants;
+import com.tlsconfig.utils.PropReader;
+import com.tlsconfig.utils.SSHAdapter;
 
 public class HealthChecker {
 
