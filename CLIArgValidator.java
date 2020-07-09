@@ -1,12 +1,12 @@
 
-package com.nokia.oss.securitymanagement.tlsconfig.validator;
+package com.tlsconfig.validator;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
-import com.nokia.oss.securitymanagement.tlsconfig.dto.OperationType;
+import com.tlsconfig.dto.OperationType;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
@@ -18,10 +18,10 @@ import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.nokia.oss.securitymanagement.tlsconfig.dto.ArgumentDTO;
-import com.nokia.oss.securitymanagement.tlsconfig.exception.TLSException;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.Constants;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.ReturnCodes;
+import com.tlsconfig.dto.ArgumentDTO;
+import com.tlsconfig.exception.TLSException;
+import com.tlsconfig.utils.Constants;
+import com.tlsconfig.utils.ReturnCodes;
 
 public class CLIArgValidator {
 
@@ -35,7 +35,7 @@ public class CLIArgValidator {
         ResourceBundle optionDescription = null;
         try {
             optionDescription = new PropertyResourceBundle(
-                    new FileInputStream(System.getProperty("com.nokia.tls.bundle.location")));
+                    new FileInputStream(System.getProperty("com.tls.bundle.location")));
         } catch (IOException e) {
             throw new TLSException("Unable to resource bundle", e, ReturnCodes.FILE_NOT_FOUND.getValue());
         }
