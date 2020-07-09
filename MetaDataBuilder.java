@@ -1,5 +1,5 @@
 
-package com.nokia.oss.securitymanagement.tlsconfig.validator;
+package com.tlsconfig.validator;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,9 +15,9 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.nokia.oss.securitymanagement.tlsconfig.exception.TLSException;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.Constants;
-import com.nokia.oss.securitymanagement.tlsconfig.utils.ReturnCodes;
+import com.tlsconfig.exception.TLSException;
+import com.tlsconfig.utils.Constants;
+import com.tlsconfig.utils.ReturnCodes;
 
 public final class MetaDataBuilder {
 
